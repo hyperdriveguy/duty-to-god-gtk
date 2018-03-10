@@ -14,7 +14,7 @@ class webContainer:
                self.menu = self.builder.get_object('menu')
                self.webwin = self.builder.get_object('webwin')
                
-               self.webview =WebKit2.WebView.new()
+               self.webview = WebKit2.WebView.new()
                self.webwin.add(self.webview)
                self.webview.load_uri('http://www.dutytogod.lds.org')
                self.webview.connect('load-changed', self.change_current_url)
